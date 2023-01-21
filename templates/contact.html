@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/resize33.jpg');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-end">
@@ -27,10 +27,11 @@
                                       <h3 class="mb-4">Get in touch</h3>
                                       <div id="form-message-warning" class="mb-4"></div> 
                                 <div id="form-message-success" class="mb-4">
-                              Your message was sent, thank you!
+                                    {%include '_alerts.html' %}
                                 </div>
-                                      <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                                          <div class="row">
+                                      <form method="POST" id="contactForm" name="contactForm" class="contactForm" method="post" action="{% url 'contact-us' %}">
+                                        {% csrf_token %}  
+                                        <div class="row">
                                               <div class="col-md-6">
                                                   <div class="form-group">
                                                       <label class="label" for="name">Full Name</label>
@@ -47,11 +48,11 @@
                                                   <div class="form-group">
                                                       <label class="label" for="subject">Subject</label>
                                                       <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                                                  </div>
+                                                  </div> 
                                               </div>
                                               <div class="col-md-12">
                                                   <div class="form-group">
-                                                      <label class="label" for="#">Message</label>
+                                                      <label class="label" for="message">Message</label>
                                                       <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
                                                   </div>
                                               </div>
@@ -74,7 +75,7 @@
                                       <span class="fa fa-map-marker"></span>
                                   </div>
                                   <div class="text pl-3">
-                                  <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                  <p><span>Address:</span> Thadomal Shahani Engineering College, Bandra(W), Mumbai</p>
                                 </div>
                             </div>
                               <div class="dbox w-100 d-flex align-items-center">
@@ -82,7 +83,7 @@
                                       <span class="fa fa-phone"></span>
                                   </div>
                                   <div class="text pl-3">
-                                  <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                  <p><span>Phone:</span> <a href="tel://1234567920">+91 8433168221</a></p>
                                 </div>
                             </div>
                               <div class="dbox w-100 d-flex align-items-center">
@@ -90,7 +91,7 @@
                                       <span class="fa fa-paper-plane"></span>
                                   </div>
                                   <div class="text pl-3">
-                                  <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                  <p><span>Email:</span> <a href="mailto:info@yoursite.com">ukd8150@gmail.com</a></p>
                                 </div>
                             </div>
                               <div class="dbox w-100 d-flex align-items-center">
@@ -98,7 +99,7 @@
                                       <span class="fa fa-globe"></span>
                                   </div>
                                   <div class="text pl-3">
-                                  <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                                  <p><span>Website</span> <a href="#">fitNright.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +107,8 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-12">
-                  <div id="map" class="map"></div>
+                  <!-- <div class="col-md-12">
+                  <div id="map" class="map"></div> -->
               </div>
               </div>
       </div>

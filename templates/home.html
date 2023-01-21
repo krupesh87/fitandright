@@ -12,44 +12,52 @@
 	          <div class="row no-gutters slider-text align-items-center">
 		          <div class="col-md-7 ftco-animate">
 		          	<div class="text w-100">
-		          		<h2>Welcome to Health Coach</h2>
+		          		<!-- <h2>Welcome to Health Coach</h2> -->
 			            <h1 class="mb-4">Get in shape faster, live your happy life</h1>
-			            <p><a href="#" class="btn btn-primary">Learn more</a> <a href="#" class="btn btn-white">Contact us</a></p>
+			            <p><a href="{% url 'service' %}" class="btn btn-primary">Learn more</a> 
+							<!-- <a href="#" class="btn btn-white">Contact us</a> -->
+						</p>
 		            </div>
 		          </div>
 		        </div>
 	        </div>
 	      </div>
 
-	      <div class="slider-item js-fullheight" style="background-image:url(/static/images/bg_2.jpg);">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row no-gutters slider-text align-items-center">
-		          <div class="col-md-7 ftco-animate">
-		          	<div class="text w-100">
-		          		<h2>A Fresh approach to healthy life</h2>
-			            <h1 class="mb-4 color-white">Unlock your potential with good nutrition</h1>
-			            <p><a href="#" class="btn btn-primary">Learn more</a> <a href="#" class="btn btn-white">Contact us</a></p>
-		            </div>
-		          </div>
-		        </div>
-	        </div>
-	      </div>
 
-	      <div class="slider-item js-fullheight" style="background-image:url(/static/images/bg_3.jpg);">
+	      <div class="slider-item js-fullheight" style="background-image:url(/static/images/resize22.jpg);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-end">
 		          <div class="col-md-6 ftco-animate">
 		          	<div class="text w-100">
-		          		<h2>Welcome Health Coach</h2>
-			            <h1 class="mb-4">You can transform health through habit change</h1>
-			            <p><a href="#" class="btn btn-primary">Learn more</a> <a href="#" class="btn btn-white">Contact us</a></p>
+		          		<!-- <h2>Welcome Health Coach</h2> -->
+			            <h1 style="color: white;" class="mb-4">You can transform health through habit change</h1>
+			            <p><a href="{% url 'service' %}" class="btn btn-primary">Learn more</a> 
+							<!-- <a href="#" class="btn btn-white">Contact us</a> -->
+						</p>
 		            </div>
 		          </div>
 		        </div>
 	        </div>
 	      </div>
+
+		  <div class="slider-item js-fullheight" style="background-image:url(/static/images/resize1.jpg);">
+			<div class="overlay"></div>
+		  <div class="container">
+			<div class="row no-gutters slider-text align-items-center">
+				<div class="col-md-7 ftco-animate">
+					<div class="text w-100">
+						<h2>A Fresh approach to healthy life</h2>
+					  <h1 class="mb-4 color-white">Unlock your potential with good nutrition</h1>
+					  <p><a href="{% url 'service' %}" class="btn btn-primary">Learn more</a> 
+						  <!-- <a href="#" class="btn btn-white">Contact us</a> -->
+					  </p>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+
 	    </div>
 	  </div>
 		
@@ -61,8 +69,8 @@
               <div class="img" style="background-image: url(/static/images/services-1.jpg);"></div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Exercise Program</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn btn-primary btn-outline-primary">Read more</a></p>
+                <p>Good things come to those who sweat.The pain you feel today, will be the strenght you feel tomorrow.</p>
+                <p><a href="{% url 'coach' %}" class="btn btn-primary btn-outline-primary">Read more</a></p>
               </div>
             </div>      
           </div>
@@ -71,8 +79,8 @@
               <div class="img" style="background-image: url(/static/images/services-2.jpg);"></div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Nutrition Plans</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn btn-primary btn-outline-primary">Read more</a></p>
+                <p>Those who think they have no time for healthy eating, will sooner or later have to find time for illness.</p>
+                <p><a href="{% url 'blog' %}" class="btn btn-primary btn-outline-primary">Read more</a></p>
               </div>
             </div>    
           </div>
@@ -81,8 +89,8 @@
               <div class="img" style="background-image: url(/static/images/services-3.jpg);"></div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Diet Program</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn btn-primary btn-outline-primary">Read more</a></p>
+                <p>When diet is wrong, medicine is of no use. When diet is correct, medicine is of no need.</p>
+                <p><a href="{% url 'blog' %}" class="btn btn-primary btn-outline-primary">Read more</a></p>
               </div>
             </div>      
           </div>
@@ -98,13 +106,13 @@
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
 	          	<div class="pl-md-5">
-		          	<span class="subheading mb-2">Welcome to Healthcare</span>
+		          	<span class="subheading mb-2">Welcome to fitNright</span>
 		            <h2 class="mb-2">Hello! Health Care is a natural way of improving your health</h2>
 	            </div>
 	          </div>
 	          <div class="pl-md-5">
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar. Sed non ultricies mi. Sed mauris tellus, blandit eu sapien ut, tempus molestie velit.</p>
+							<p>Aenean efficitur sodales pellentesque. Aliquam sit amet mauris congue, pretium urna ac, scelerisque massa. Nam elementum, elit sit amet faucibus vulputate, augue dui volutpat purus, quis pulvinar turpis neque eu elit. Morbi convallis ut elit vitae posuere.</p>
 							<div class="founder d-flex align-items-center mt-5">
 								<div class="img" style="background-image: url(/static/images/coach-1.jpg);"></div>
 								<div class="text pl-3">
@@ -117,14 +125,14 @@
 				</div>
 			</div>
 		</section>
-
+		{%include '_alerts.html' %}
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div class="container-fluid px-md-0">
 				<div class="row no-gutters">
 					<div class="col-md-3 d-flex align-items-stretch">
 						<div class="consultation w-100 text-center px-4 px-md-5">
 							<h3 class="mb-4">Healthcare Services</h3>
-							<p>A small river named Duden flows by their place and supplies</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							<a href="#" class="btn-custom">See Services</a>
 						</div>
 					</div>
@@ -133,16 +141,19 @@
 							<div class="text-center">
 								<h3 class="mb-4">Free Consultation</h3>
 							</div>
-							<form action="#" class="appointment-form">
+							<form method="POST" class="appointment-form" method="post" action="{% url 'book-app' %}" >
+								{% csrf_token %}  
 								<div class="row">
 									<div class="col-md-12 col-lg-6 col-xl-4">
 										<div class="form-group">
-				    					<input type="text" class="form-control" placeholder="First Name">
+											<label class="label" for="fname">First Name</label>
+				    					<input type="text" class="form-control" name="fname" placeholder="First Name">
 				    				</div>
 									</div>
 									<div class="col-md-12 col-lg-6 col-xl-4">
 										<div class="form-group">
-				    					<input type="text" class="form-control" placeholder="Last Name">
+											<label class="label" for="lname">Last Name</label>
+				    					<input type="text" class="form-control" name="lname" placeholder="Last Name">
 				    				</div>
 									</div>
 									<div class="col-md-12 col-lg-6 col-xl-4">
@@ -187,7 +198,7 @@
 					<div class="col-md-3 d-flex align-items-stretch">
 						<div class="consultation w-100 text-center px-4 px-md-5">
 							<h3 class="mb-4">Find A Health Expert</h3>
-							<p>A small river named Duden flows by their place and supplies</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							<a href="#" class="btn-custom">Meet our health coach</a>
 						</div>
 					</div>
@@ -201,37 +212,37 @@
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
           	<span class="subheading mb-3">Testimonies</span>
-            <h2>Happy Clients &amp; Feedbacks</h2>
+            <h2>Happy Users &amp; Feedbacks</h2>
           </div>
         </div>
         <div class="row ftco-animate">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel">
-							<div class="item">
+				<div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(/static/images/person_1.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/person-1.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <i class="fa fa-quote-left"></i>
                     </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Racky Henderson</p>
-                    <span class="position">Father</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Pooja</p>
+                   
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(/static/images/person_2.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/person-2.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <i class="fa fa-quote-left"></i>
                     </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Henry Dee</p>
-                    <span class="position">Businesswoman</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Ranbir</p>
+                   
                   </div>
                 </div>
               </div>
@@ -243,37 +254,37 @@
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <i class="fa fa-quote-left"></i>
                     </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Huff</p>
-                    <span class="position">Businesswoman</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Arjun</p>
+                   
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(/static/images/person_4.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/person-3.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <i class="fa fa-quote-left"></i>
                     </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Rodel Golez</p>
-                    <span class="position">Businesswoman</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Aarya</p>
+                  
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(/static/images/person_1.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/staff-6.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <i class="fa fa-quote-left"></i>
                     </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Ken Bosh</p>
-                    <span class="position">Businesswoman</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Nidhi</p>
+                   
                   </div>
                 </div>
               </div>
@@ -287,7 +298,7 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading mb-3">Other Services</span>
+          	<!-- <span class="subheading mb-3">Other Services</span> -->
             <h2>How it works?</h2>
           </div>
         </div>
@@ -299,7 +310,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Follow the program</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
               </div>
             </div>      
           </div>
@@ -310,7 +321,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Work for result</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+           
               </div>
             </div>    
           </div>
@@ -321,7 +332,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Eat healthy food</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+               
               </div>
             </div>      
           </div>
@@ -332,7 +343,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Enjoy your life</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+             
               </div>
             </div>      
           </div>
@@ -340,7 +351,7 @@
     	</div>
     </section>
 
-		<section class="ftco-section ftco-no-pb bg-light">
+		<!-- <section class="ftco-section ftco-no-pb bg-light">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -412,7 +423,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 		
 		<section class="ftco-intro" style="background-image: url(/static/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
@@ -424,101 +435,14 @@
 						<p></p>
 					</div>
 					<div class="col-md-3 d-flex align-items-center">
-						<p class="mb-0"><a href="#" class="btn btn-white px-4 py-3">Free Consutation</a></p>
+						<p class="mb-0"><a href="{% url 'book-app' %}" class="btn btn-white px-4 py-3">Free Consutation</a></p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 
-    <section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5 mb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading mb-3">Price &amp; Plans</span>
-            <h2>Choose Your Perfect Plans</h2>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            	<h4 class="heading-2">Starter</h4>
-	            	<span class="excerpt d-block">A Beautiful Healthcare</span>
-		            <span class="price"><sup>$</sup> <span class="number">49</span></span>
-		            
-		            <ul class="pricing-text mb-5">
-		              <li><span class="fa fa-check mr-2"></span>20 Workouts</li>
-		              <li><span class="fa fa-check mr-2"></span>Meal plans in mobile</li>
-		              <li><span class="fa fa-check mr-2"></span>One Coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>-50% Group coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>24/7 Customer support</li>
-		            </ul>
-
-		            <a href="#" class="btn btn-primary px-4 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-            	<h4 class="heading-2">Standard</h4>
-            	<span class="excerpt d-block">A Beautiful Healthcare</span>
-	            <span class="price"><sup>$</sup> <span class="number">79</span></span>
-	            
-	            <ul class="pricing-text mb-5">
-		              <li><span class="fa fa-check mr-2"></span>20 Workouts</li>
-		              <li><span class="fa fa-check mr-2"></span>Meal plans in mobile</li>
-		              <li><span class="fa fa-check mr-2"></span>One Coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>-50% Group coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>24/7 Customer support</li>
-		            </ul>
-
-	            <a href="#" class="btn btn-primary px-4 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-            	<h4 class="heading-2">Premium</h4>
-            	<span class="excerpt d-block">A Beautiful Healthcare</span>
-	            <span class="price"><sup>$</sup> <span class="number">109</span></span>
-	            
-	            <ul class="pricing-text mb-5">
-		              <li><span class="fa fa-check mr-2"></span>20 Workouts</li>
-		              <li><span class="fa fa-check mr-2"></span>Meal plans in mobile</li>
-		              <li><span class="fa fa-check mr-2"></span>One Coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>-50% Group coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>24/7 Customer support</li>
-		            </ul>
-
-	            <a href="#" class="btn btn-primary px-4 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-            	<h4 class="heading-2">Platinum</h4>
-            	<span class="excerpt d-block">A Beautiful Healthcare</span>
-	            <span class="price"><sup>$</sup> <span class="number">159</span></span>
-	            
-	            <ul class="pricing-text mb-5">
-		              <li><span class="fa fa-check mr-2"></span>20 Workouts</li>
-		              <li><span class="fa fa-check mr-2"></span>Meal plans in mobile</li>
-		              <li><span class="fa fa-check mr-2"></span>One Coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>-50% Group coaching</li>
-		              <li><span class="fa fa-check mr-2"></span>24/7 Customer support</li>
-		            </ul>
-
-	            <a href="#" class="btn btn-primary px-4 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-    	</div>
-    </section>
+  
 
     <section class="ftco-section">
       <div class="container">
@@ -531,43 +455,43 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('/static/images/image_1.jpg');">
+              <a href="{% url 'blog' %}" class="block-20 rounded" style="background-image: url('/static/images/image_1.jpg');">
               </a>
               <div class="text mt-3">
               	<div class="meta mb-2">
-                  <div><a href="#">January 30, 2020</a></div>
+                  <div><a href="#">January 30, 2022</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('/static/images/image_2.jpg');">
+              <a href="{% url 'blog' %}" class="block-20 rounded" style="background-image: url('/static/images/image_2.jpg');">
               </a>
               <div class="text mt-3">
               	<div class="meta mb-2">
-                  <div><a href="#">January 30, 2020</a></div>
+                  <div><a href="#">January 30, 2022</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('/static/images/image_3.jpg');">
+              <a href="{% url 'blog' %}" class="block-20 rounded" style="background-image: url('/static/images/image_3.jpg');">
               </a>
               <div class="text mt-3">
               	<div class="meta mb-2">
-                  <div><a href="#">January 30, 2020</a></div>
+                  <div><a href="#">January 30, 2022</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
               </div>
             </div>
           </div>
